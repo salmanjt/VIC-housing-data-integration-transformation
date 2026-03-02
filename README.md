@@ -12,16 +12,16 @@ Importing data from XML and JSON property files, shapefiles for suburb boundarie
 
 ### Data Integration
 
--   **Property Data:** Merging XML and JSON property information into a single DataFrame, ensuring consistency and handling duplicates.
--   **Geospatial Mapping:** Mapping properties to suburbs and LGAs using geographic coordinates through spatial joins.
--   **Transport Accessibility:** Calculating distances to nearest train stations and estimating travel times to Melbourne Central using GTFS data.
--   **Web Scraping:** Extracting additional housing data, such as median house prices, number of houses/units and demographics from `house.speakingsame.com`.
+- **Property Data:** Merging XML and JSON property information into a single DataFrame, ensuring consistency and handling duplicates.
+- **Geospatial Mapping:** Mapping properties to suburbs and LGAs using geographic coordinates through spatial joins.
+- **Transport Accessibility:** Calculating distances to nearest train stations and estimating travel times to Melbourne Central using GTFS data.
+- **Web Scraping:** Extracting additional housing data, such as median house prices, number of houses/units and demographics from `house.speakingsame.com`.
 
 ### Data Transformation
 
--   **Data Cleaning:** Addressing missing values, correcting data types and standardising formats across the integrated dataset.
--   **Feature Engineering:** Creating new variables such as travel time to Melbourne Central (`travel_min_to_MC`) and direct journey flags (`direct_journey_flag`).
--   **Normalization and Scaling:** Applying data transformation techniques such as z-score standardisation, min-max scaling, and log transformations to prepare the dataset for modeling.
+- **Data Cleaning:** Addressing missing values, correcting data types and standardising formats across the integrated dataset.
+- **Feature Engineering:** Creating new variables such as travel time to Melbourne Central (`travel_min_to_MC`) and direct journey flags (`direct_journey_flag`).
+- **Normalization and Scaling:** Applying data transformation techniques such as z-score standardisation, min-max scaling, and log transformations to prepare the dataset for modeling.
 
 ### Model Evaluation
 
@@ -31,11 +31,11 @@ Overall, this project highlights a robust approach to turning heterogeneous and 
 
 ## Tools & Technologies
 
--   Python (Pandas, NumPy)
--   Geospatial Analysis (GeoPandas, Shapely, Folium)
--   Data Visualisation (Matplotlib, Seaborn)
--   Web Scraping (Requests, BeautifulSoup)
--   PDF Processing (PDFMiner)
+- Python (Pandas, NumPy)
+- Geospatial Analysis (GeoPandas, Shapely, Folium)
+- Data Visualisation (Matplotlib, Seaborn)
+- Web Scraping (Requests, BeautifulSoup)
+- PDF Processing (PDFMiner)
 
 ## Project Tree
 
@@ -80,32 +80,32 @@ Overall, this project highlights a robust approach to turning heterogeneous and 
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/salmanjt/VIC-housing-data-pipeline.git
-    cd VIC-housing-data-pipeline
-    ```
+   ```bash
+   git clone https://github.com/salmanjt/VIC-housing-data-pipeline.git
+   cd VIC-housing-data-pipeline
+   ```
 
 2. Install required dependencies:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Data Sources
 
 This project uses several publicly available datasets:
 
--   Property data (XML, JSON) from project specifications
--   Geographic boundaries (shapefiles) from Victorian Government Data Directory
--   Public transport data (GTFS) from Public Transport Victoria
--   Web-scraped housing statistics from `house.speakingsame.com`
+- Property data (XML, JSON) from project specifications
+- Geographic boundaries (shapefiles) from Victorian Government Data Directory
+- Public transport data (GTFS) from Public Transport Victoria
+- Web-scraped housing statistics from `house.speakingsame.com`
 
 ## Future Improvements
 
--   **Automated Testing:** Implement automated tests for data extraction and transformation processes to ensure robustness and reliability.
--   **Advanced Modeling:** Explore advanced machine learning models, such as ensemble methods or neural networks, to enhance predictive performance.
--   **Interactive Visualisation:** Integrate interactive visualisation to better understand spatial relationships and housing trends.
--   **Data Updates:** Establish routines for regularly updating the dataset to reflect changes in property listings, transport schedules and housing market conditions.
+- **Automated Testing:** Implement automated tests for data extraction and transformation processes to ensure robustness and reliability.
+- **Advanced Modeling:** Explore advanced machine learning models, such as ensemble methods or neural networks, to enhance predictive performance.
+- **Interactive Visualisation:** Integrate interactive visualisation to better understand spatial relationships and housing trends.
+- **Data Updates:** Establish routines for regularly updating the dataset to reflect changes in property listings, transport schedules and housing market conditions.
 
 ## License
 
